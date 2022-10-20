@@ -4,24 +4,23 @@ This is my first currency-converter for learning javasrcipt with you-code.pl
 #
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-- [DEMO]()
-- [PREVIEW]()
-- [HOWITWORK]()
-- [USED TECHNOLOGIES]()
-- [AUTHOR]()
-- [NPM Scripts]()
+- [DEMO](https://github.com/arturgajewski/currency-converter-react#demo-website)
+- [PREVIEW](https://github.com/arturgajewski/currency-converter-react#preview)
+- [HOWITBUILD](https://github.com/arturgajewski/currency-converter-react#how-it-work)
+- [AUTHOR](https://github.com/arturgajewski/currency-converter-react#artur-gajewski)
+- [NPM Scripts](https://github.com/arturgajewski/currency-converter-react#available-scripts)
 #
 # Welcome in Currency Converter
 If you want exchange your money from EURO to PLN (Poland money),you can use this for to know how money you will have in PLN (Poland money). 
 #
 ## DEMO WEBSITE
-[DEMO]()
+[DEMO](https://arturgajewski.github.io/currency-converter-react/)
 
 #
 ## PREVIEW
 Here it will be image.
 #
-## HOW IT WORK?
+## TECHNOLOGIES
 ### To build this application i used
 
 1.  Semantic HTML
