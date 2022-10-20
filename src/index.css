@@ -18,6 +18,7 @@ body {
   background-image: url("../images/background.jpg");
   background-size: cover;
   background-attachment: fixed;
+  color: #3C4048;
 }
 
 @media (max-width: 950px) {
