@@ -9,26 +9,33 @@ const currencies = [
   {
     id: 1,
     name: "EURO",
-    value: 4.89,
+    value: 4.84,
   },
   {
     id: 2,
     name: "DOLAR",
-    value: 4.93,
+    value: 4.95,
   },
   {
     id: 3,
     name: "GBP",
-    value: 5.44,
+    value: 5.57,
   },
   {
     id: 4,
     name: "CZK",
-    value: 0.21,
+    value: 0.19,
   },
 ];
 
 function App() {
+const [currency,setCurrency] = useState();
+
+const onChangeSetCurrency = () => {
+  console.log("Witaj w konsoli programisty :)");
+};
+console.log(onChangeSetCurrency());
+
   return (
    <Container>
      <Header title="Kantor Walut" />
@@ -36,8 +43,11 @@ function App() {
     title="Wybierz walutę"
     description="Pola oznaczone * są wymagane."
     body={<Form 
-    button={<Buttons />}  />}
+    button={<Buttons />} 
+      />}
+    information="Kursy walut na dzień 20.10.2022 pobrane z NBP"
      />
+    
     </Container>
   );
 }
