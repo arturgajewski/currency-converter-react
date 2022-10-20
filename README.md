@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - [DEMO](https://github.com/arturgajewski/currency-converter-react#demo-website)
 - [PREVIEW](https://github.com/arturgajewski/currency-converter-react#preview)
-- [HOWITBUILD]https://github.com/arturgajewski/currency-converter-react#technologies)
+- [HOWITBUILD](https://github.com/arturgajewski/currency-converter-react#technologies)
 - [AUTHOR](https://github.com/arturgajewski/currency-converter-react#author)
 - [NPM Scripts](https://github.com/arturgajewski/currency-converter-react#available-scripts)
 #
