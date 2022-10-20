@@ -7,12 +7,12 @@
 
 .form__currencyContainer {
   border: none;
-  background-color: #3C4048;
+  background-color: #3c4048;
   padding: 10px;
   border-radius: 5px;
 }
 
-.form__currencyOption{
+.form__currencyOption {
   color: #eaeaea;
   margin-left: 20px;
 }
@@ -34,7 +34,7 @@
 .form__result {
   font-weight: 900;
   color: #ffffff;
-  background-color: #3C4048;
+  background-color: #3c4048;
   padding: 10px;
   border-radius: 5px;
   text-align: center;
