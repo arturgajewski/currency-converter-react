@@ -40,3 +40,9 @@
   text-align: center;
   margin: 20px;
 }
+
+.form__currencyOptionName {
+  margin: 10px;
+  color: #ffffff;
+  font-weight: 400;
+}
