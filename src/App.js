@@ -31,15 +31,13 @@ const currencies = [
 function App() {
   return (
    <Container>
-    <Header title="Kantor Walut" />
-<Section 
-title="Wybierz walutę"
-description="Pola oznaczone * są
-wymagane."
-body={<Form 
-button={<Buttons />}
-/>}
-/>
+     <Header title="Kantor Walut" />
+      <Section 
+    title="Wybierz walutę"
+    description="Pola oznaczone * są wymagane."
+    body={<Form 
+    button={<Buttons />}  />}
+     />
     </Container>
   );
 }
