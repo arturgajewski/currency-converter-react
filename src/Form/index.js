@@ -5,15 +5,15 @@ const Form = ({button}) => {
     <form className="form">
       <fieldset className="form__currencyContainer">
         
-        <span className="form__currencyOption">EURO 4.85</span>
+        <span className="form__currencyOptionName">EURO 4.84</span>
         <input
           type="radio"
           name="currency"
           required
-          value="4.85"
+          value="4.84"
           className="form_input"
         />
-        <span className="form__currencyOption">DOLAR 4.95</span>
+        <span className="form__currencyOptionName">DOLAR 4.95</span>
         <input
           type="radio"
           name="currency"
@@ -21,28 +21,28 @@ const Form = ({button}) => {
           value="4.95"
           className="form_input"
         />
-        <span className="form__currencyOption">GBP 5.49</span>
+        <span className="form__currencyOptionName">GBP 5.57</span>
         <input
           type="radio"
           name="currency"
           required
-          value="5.49"
+          value="5.57"
           className="form_input"
         />
-        <span className="form__currencyOption">CHF 5.07</span>
+        <span className="form__currencyOptionName">CHF 4.93</span>
         <input
           type="radio"
           name="currency"
           required
-          value="5.07"
+          value="4.93"
           className="form_input"
         />
-        <span className="form__currencyOption">CZK 0.2</span>
+        <span className="form__currencyOptionName">CZK 0.19</span>
         <input
           type="radio"
           name="currency"
           required
-          value="0.20"
+          value="0.19"
           className="form_input"
         />
       </fieldset>
@@ -51,8 +51,8 @@ const Form = ({button}) => {
       <input
         className="form__input"
         type="number"
-        maxlength="10"
-        minlength="2"
+        maxLength="10"
+        minLength="2"
         required
       />
       Kwota którą otrzymasz to: <span className="form__result">0</span>
