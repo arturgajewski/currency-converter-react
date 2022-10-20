@@ -47,7 +47,7 @@ const Form = ({button}) => {
         />
       </fieldset>
       <div className="form__setResult">
-      Wpisz kwotę PLN :
+      *Wpisz kwotę PLN :
       <input
         className="form__input"
         type="number"
