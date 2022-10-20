@@ -40,7 +40,7 @@ console.log(onChangeSetCurrency());
    <Container>
      <Header title="Kantor Walut" />
       <Section 
-    title="Wybierz walutę"
+    title="Wybierz walutę *"
     description="Pola oznaczone * są wymagane."
     body={<Form 
     button={<Buttons />} 
