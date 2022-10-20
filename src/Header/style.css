@@ -1,0 +1,15 @@
+.header{
+  background-color: #00ABB3;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  margin-bottom: 30px;
+}
+
+.header__title {
+  text-align: center;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size:28px;
+}
