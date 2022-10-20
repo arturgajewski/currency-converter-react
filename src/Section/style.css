@@ -1,0 +1,21 @@
+.section__title {
+  background-color: #b2b2b2;
+  padding: 20px;
+  margin: 20px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #3c4048;
+}
+
+.section__description {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #3c4048;
+  font-size: 16px;
+  padding-top: 20px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
