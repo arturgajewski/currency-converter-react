@@ -1,12 +1,12 @@
-const Result = ({ result }) => {
+const Result = ({ result,originalAmount,finalResult,fullName }) => {
   if (result === "") {
     return "";
   }
   return (
     
  <fieldset>
-        Za {result.originalAmount} PLN otrzymasz <span className="form__result">{result.finalResult.toFixed(2)}{" "}
-        {result.name}</span>
+        Za {result.originalAmount} PLN otrzymasz <span className="form__result">{result.finalResult}
+        {result.fullName}</span>
     </fieldset> 
   
   );
