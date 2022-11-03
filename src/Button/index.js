@@ -1,9 +1,9 @@
 import "./style.css";
 
-const Buttons = () => (
-  <button className="button" value="reset" type="reset">
-    Wyczyść pole kwota
+const Button = () => (
+  <button className="button">
+    Wyślij
   </button>
 );
 
-export default Buttons;
+export default Button;
