@@ -1,83 +1,60 @@
 import "./style.css";
+import { currencies } from "../currencies/currencies";
 import { useState } from "react";
-import currencies from "../Currencies";
+import Button from "../Button";
 import Result from "../Result";
 
-const Form = ({ button }) => {
-  const [result, setResult] = useState("");
+const Form = ({ result, calculateResult }) => {
+  const [currency, setCurrency] = useState(currencies[0].fullName);
   const [amount, setAmount] = useState("");
-  const [currency, setCurrency] = useState(currencies[0].id);
 
-  const calculateResult = (amount, currency) => {
-    const targetRate = currencies.find(({ id }) => id === currency).rate;
-
-    setResult({
-      originalAmount: +amount,
-      finalResult: amount / targetRate,
-      currency: currency,
-    });
+  const onFormSubmit = (event) => {
+    event.preventDefault();
+    calculateResult(currency, amount);
   };
 
   return (
-    <form className="form" onInput={calculateResult}>
+    <form 
+    className="form" 
+    onSubmit={onFormSubmit}
+    >
       <fieldset className="form__currencyContainer">
-        <span className="form__currencyOptionName">EURO 4.84</span>
-        <input
-          type="radio"
-          name={currencies.map(({ currency }) => currency === "EURO")}
-          required
-          value={amount}
-          className="form_input"
-        />
-        <span className="form__currencyOptionName">DOLAR 4.95</span>
-        <input
-          type="radio"
-          name={currencies.map(({ currency }) => currency === "DOLAR")}
-          required
-          value={amount}
-          className="form_input"
-        />
-        <span className="form__currencyOptionName">GBP 5.57</span>
-        <input
-          type="radio"
-          name={currencies.map(({ currency }) => currency === "GBP")}
-          required
-          value={amount}
-          className="form_input"
-        />
-        <span className="form__currencyOptionName">CHF 4.93</span>
-        <input
-          type="radio"
-          name={currencies.map(({ currency }) => currency === "CHF")}
-          required
-          value={amount}
-          className="form_input"
-        />
-        <span className="form__currencyOptionName">CZK 0.19</span>
-        <input
-          type="radio"
-          name={currencies.map(({ currency }) => currency === "CZK")}
-          required
-          value={amount}
-          className="form_input"
-        />
+        <label className="form__currencyOption">
+          <select
+            value={currency}
+            onChange={({ target }) => setCurrency(target.value)}
+          >
+            {currencies.map(({ fullName, id, rate }) => (
+              <option key={id} value={rate}>
+                {fullName}
+              </option>
+            ))}
+            ;
+          </select>
+        </label>
       </fieldset>
-      <div className="form__setResult">
-        *Wpisz kwotę PLN :
+      <fieldset className="form__currencyContainer">
+        <span className="form__currencyOption"> Wpisz kwotę PLN :</span>
         <input
           className="form__input"
-          type="number"
-          maxLength="10"
-          minLength="2"
           required
+          type="number"
+          name="kwota"
+          step="0.01"
+          min="1"
+          max="1000000000"
           value={amount}
-          onChange={(event) => setAmount(event.target.value)}
+          onChange={({ target }) => setAmount(target.value)}
         />
-        <Result result={result} />
-      </div>
-      {button}
+        <label>
+          <Result 
+          result={result}
+          />
+        </label>
+      </fieldset>
+      <Button />
     </form>
   );
 };
-
+console.log();
 export default Form;
