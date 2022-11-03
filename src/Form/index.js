@@ -14,10 +14,7 @@ const Form = ({ result, calculateResult }) => {
   };
 
   return (
-    <form 
-    className="form" 
-    onSubmit={onFormSubmit}
-    >
+    <form className="form" onSubmit={onFormSubmit}>
       <fieldset className="form__currencyContainer">
         <label className="form__currencyOption">
           <select
@@ -47,9 +44,7 @@ const Form = ({ result, calculateResult }) => {
           onChange={({ target }) => setAmount(target.value)}
         />
         <label>
-          <Result 
-          result={result}
-          />
+          <Result result={result} />
         </label>
       </fieldset>
       <Button />
