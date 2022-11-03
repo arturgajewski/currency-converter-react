@@ -1,14 +1,20 @@
-const Result = ({ result,originalAmount,finalResult,fullName }) => {
+const Result = ({ result }) => {
   if (result === "") {
     return "";
   }
   return (
-    
- <fieldset>
-        Za {result.originalAmount} PLN otrzymasz <span className="form__result">{result.finalResult}
-        {result.fullName}</span>
-    </fieldset> 
-  
+    <fieldset>
+      <>
+        <span className="form__currencyOption">
+          Za {result.originalAmount} PLN otrzymasz{" "}
+        </span>
+        <span className="form__result">
+          {" "}
+          {result.finalResult}
+          {result.fullName}
+        </span>
+      </>
+    </fieldset>
   );
 };
 
