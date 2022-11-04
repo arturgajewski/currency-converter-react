@@ -1,0 +1,24 @@
+.result {
+  border: none;
+  font-weight: 900;
+  color: #ffffff;
+  background-color: #00ABB3;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 20px;
+}
+
+.result__finish {
+  font-weight: 900;
+  color: #ffffff;
+  background-color: #00ABB3;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 20px;
+}
+
+.result__mainValue {
+  background-color: hsl(183, 100%, 38%);
+}
