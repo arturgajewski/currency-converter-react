@@ -1,0 +1,18 @@
+.footer {
+  font-size: 24px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  color: #3c4048;
+  border-top: 1px solid hsl(220, 9%, 66%);
+  margin: 30px;
+  padding: 20px;
+}
+
+.footer__container {
+  display: block;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  color: #3c4048;
+  text-align: center;
+}
