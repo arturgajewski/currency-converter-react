@@ -32,16 +32,6 @@
   border: none;
 }
 
-.form__result {
-  font-weight: 900;
-  color: #ffffff;
-  background-color: #3c4048;
-  padding: 10px;
-  border-radius: 5px;
-  text-align: center;
-  margin: 20px;
-}
-
 .form__currencyOptionName {
   margin: 10px;
   color: #ffffff;
