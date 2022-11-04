@@ -1,17 +1,18 @@
+import "./style.css"
+
 const Result = ({ result }) => {
   if (result === "") {
     return "";
   }
   return (
-    <fieldset>
+    <fieldset className="result">
       <>
         <span className="form__currencyOption">
-          Za {result.originalAmount} PLN otrzymasz{" "}
+          Za {result.originalAmount} PLN otrzymasz:{" "}
         </span>
-        <span className="form__result">
+        <span className="result__finish">
           {" "}
-          {result.finalResult}
-          {result.fullName}
+          {result.finalResult.toFixed(2)} {result.currency}
         </span>
       </>
     </fieldset>
