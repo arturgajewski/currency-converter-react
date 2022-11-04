@@ -10,7 +10,7 @@ const Form = ({ result, calculateResult }) => {
 
   const onFormSubmit = (event) => {
     event.preventDefault();
-    calculateResult(currency, amount);
+    calculateResult(amount, currency);
   };
 
   return (
@@ -21,8 +21,8 @@ const Form = ({ result, calculateResult }) => {
             value={currency}
             onChange={({ target }) => setCurrency(target.value)}
           >
-            {currencies.map(({ fullName, id, rate }) => (
-              <option key={id} value={rate}>
+            {currencies.map(({ name, fullName }) => (
+              <option key={name} value={name}>
                 {fullName}
               </option>
             ))}
@@ -51,5 +51,4 @@ const Form = ({ result, calculateResult }) => {
     </form>
   );
 };
-console.log();
 export default Form;
