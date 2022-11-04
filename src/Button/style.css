@@ -1,5 +1,5 @@
 .button {
-  background-color: #3C4048;
+  background-color: #00ABB3;
   padding: 15px;
   border: none;
   border-radius: 10px;
@@ -12,9 +12,9 @@
 }
 
 .button:hover {
-  background-color: hsl(220, 9%, 36%);
+  background-color: hsl(183, 100%, 40%);
 }
 
 .button:active {
-  background-color: hsl(220, 9%, 46%);
+  background-color: hsl(183, 100%, 45%);
 }
